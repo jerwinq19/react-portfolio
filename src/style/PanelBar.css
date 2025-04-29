@@ -1,0 +1,175 @@
+/* PanelBar.css */
+
+.PanelBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343434;
+    color: white;
+}
+
+.AppCont {
+    display: flex;
+    gap: 5px;
+}
+
+.Cmd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.AboutMe,
+.ContactMe,
+.MyProject {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+}
+
+.AboutMe {
+    width: 600px;
+    height: 400px;
+}
+
+.ContactMe {
+    width: 500px;
+    height: 500px;
+}
+
+.MyProject {
+    width: 800px;
+    height: 500px;
+}
+
+.AboutMeHeading {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Heading {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ApplicationCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.25rem;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .AboutMe {
+        width: 500px;
+        height: 350px;
+    }
+
+    .ContactMe {
+        width: 450px;
+        height: 450px;
+    }
+
+    .MyProject {
+        width: 700px;
+        height: 450px;
+    }
+
+    .PanelBar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .AppCont {
+        flex-direction: column;
+    }
+
+    .AboutMeHeading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ApplicationCont {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .AboutMe,
+    .ContactMe,
+    .MyProject {
+        width: 100%;
+        height: auto;
+    }
+
+    .PanelBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AppCont {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .AboutMeHeading,
+    .Heading {
+        text-align: center;
+    }
+
+    .ApplicationCont {
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .PanelBar {
+        padding: 0.5rem;
+    }
+
+    .AppCont {
+        gap: 10px;
+    }
+
+    .AboutMe,
+    .ContactMe,
+    .MyProject {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .AboutMeHeading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Heading {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ApplicationCont {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+}
